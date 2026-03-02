@@ -13,8 +13,6 @@ while True:
     except ValueError:
         print("\n A senha deve conter apenas números")
 
-# Validar as entradas
-
 # Se informações corretas: redirecionar para a tela de login
     print("\n redirecionando para a tela de login...")
 while valida_login == 0:
@@ -29,8 +27,6 @@ while valida_login == 0:
         print("\n Login concluído com sucesso!")
         valida_login = 1
     else: 
-        print("\n Usuário ou senha incorretos. Tente novamente!")
+        print("\n Usuário ou senha incorretos. Tente novamente!")          
 print("\n") 
 print ("################################################")      
-
-# Se não, redefinir a senha
