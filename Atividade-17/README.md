@@ -16,6 +16,8 @@
 
 ![Diagrama de Casos de Uso do BiblioTech](diagrama-casos-de-uso.png)
 
+## Decisões de Modelagem
+A decisão mais difícil foi organizar a identificação do Aluno e do Bibliotecário em um único caso de uso. Optei por isso para manter o diagrama limpo e legível, evitando a duplicação de elipses para uma ação que compartilha a mesma lógica no sistema.
 ## Conceito pretendido
 
 **Conceito:** A

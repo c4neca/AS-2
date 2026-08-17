@@ -36,11 +36,11 @@ Como aluno, quero uma aba de feebacks, para consultar as observações das minha
 ## Relacionamento entre casos de uso (nível A)
 
 - Tipo: «include»
-- Entre: Identificar leitor ou moderador e Validar matrícula
+- Entre: Identificar leitor / moderador e Validar matrícula
 - Por que é esse e não o outro: Porque para identificar o usuário ou moderador precisa-se necessariamente de validar a matrícula (por RA ou SUAP).
 
 - Tipo: «extend»
-- Entre: Identificar leitor ou moderador e recuperar senha
+- Entre: Identificar leitor / moderador e recuperar senha
 - Por que é esse e não o outro: Porque a recuperação de senha é opicional, apenas quando o usuário perde seu cadastro.
 
 - Tipo: «include»
@@ -51,7 +51,8 @@ Como aluno, quero uma aba de feebacks, para consultar as observações das minha
 **Conceito pretendido:** A
 
 - Conversei sobre esta atividade com: Nath
-- Esteira da análise: Não entendi essa pergunta.
-- Diagrama e notação: Foi usada a notação padrão como atores, relacionamentos e as elipses.
-- Rastreabilidade: A tabela liga diretamente a fala com o requisito funcional.
-- Organização da entrega: Segue uma ordem lógica que facilita o entendimento.
+- Esteira da análise: As duas esteiras seguem a estrutura solicitada, contendo a fala do cliente entre aspas, história no formato "Como/quero/para", RFS numerados e casos de uso com verbo + objeto com atores claros.
+- Diagrama e notação: Cumprido. O diagrama possui fronteira "BiblioTech", atores externos, e elipses internas. As associações entre atores e elipses foram ajustadas para linhas simples (sem setas), e as relações de «include» e «extend» utilizam a notação tracejada correta com as justificativas incluídas.
+- Rastreabilidade: Funcionalidade 1 (Identificação): O caminho começa na fala do cliente sobre o acesso de diferentes usuários ("Eu queria que os servidores tivessem acesso..."), que gerou a história do bibliotecário e o RF01 (diferenciar por tipo de matrícula). Esse requisito foi implantado no caso de uso "Identificar usuário", que está representado na elipse do diagrama ligado aos atores.
+Funcionalidade 2 (Feedback): O caminho tem início na fala do cliente pedindo para registrar e consultar observações após a devolução ("Quero poder escrever e armazenar observações..."), originando a história de usuário e os RF03 e RF04. Eles se transformaram nos casos de uso "Registrar feedback" e "Consultar feedback", em que os nomes estão idênticos tanto na esteira quanto nas elipses desenhadas dentro da fronteira do sistema.
+- Organização da entrega: A pasta está estruturada com os quatro arquivos corretos (`esteira-da-analise.md`, `diagrama-casos-de-uso.drawio`, `diagrama-casos-de-uso.png` e o `README.md` servindo como índice), contendo também a explicação da decisão de modelagem mais difícil.
